@@ -48,7 +48,7 @@ function Navbar() {
 
   return (
     <div
-      className={`w-full z-50 fixed top-0 bg-gradient-to-r from-green-500 to-green-800 shadow-lg text-white transition-all duration-300`}
+      className={`w-full z-50 fixed top-0 bg-gradient-to-r from-purple-500 to-purple-800 shadow-lg text-white transition-all duration-300`}
     >
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center relative">
         {/* Logo + Mobile Menu Icon */}
@@ -60,7 +60,7 @@ function Navbar() {
           />
           <Link href="/">
             <h1 className="text-2xl font-bold hover:text-yellow-200 transition-colors">
-              <span className="text-yellow-200">ADMIT</span>WISE
+              <span className="text-yellow-200">colle</span>gian
             </h1>
           </Link>
         </div>

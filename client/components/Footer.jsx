@@ -57,7 +57,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="relative bg-gradient-to-r from-green-600 to-green-800 text-white overflow-hidden ">
+    <footer className="relative bg-gradient-to-r from-purple-600 to-purple-800 text-white overflow-hidden ">
       {/* Floating Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>

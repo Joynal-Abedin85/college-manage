@@ -51,7 +51,7 @@ export default function Home() {
         <div className="container mx-auto mt-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row">
             <img
-              src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+              src="https://i.postimg.cc/QC7rFRR8/college-student-walking-to-university-campus-education-banner-concept-free-photo.jpg"
               alt="College"
               className="object-cover w-full md:w-1/3 h-48 md:h-auto"
             />
