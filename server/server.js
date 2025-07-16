@@ -10,6 +10,8 @@ const app = express();
 
 const User = require("./models/User");
 const College = require("./models/Colleges");
+const Admission = require("./models/Admission");
+
 app.use(cors());
 app.use(express.json());
 
@@ -79,6 +81,41 @@ app.post("/login", async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 });
+
+// Admission post 
+
+app.post("/admission", async (req, res) => {
+  try {
+    const {
+      collegeName,
+      candidateName,
+      subject,
+      email,
+      phone,
+      address,
+      dateOfBirth,
+      image
+    } = req.body;
+
+    const admission = new Admission({
+      collegeName,
+      candidateName,
+      subject,
+      email,
+      phone,
+      address,
+      dateOfBirth,
+      image,
+    });
+
+    await admission.save();
+    res.status(201).json({ message: "Admission submitted successfully", admission });
+  } catch (err) {
+    console.error("Admission error:", err);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
 
 // GET all colleges
 app.get("/colleges", async (req, res) => {

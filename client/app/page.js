@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import bannerImg from "@/public/banner.webp";
+import bannerImg from "@/public/banner.jpg";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
